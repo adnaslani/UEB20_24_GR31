@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner Details</title>
+</head>
+<body>
+
+<section class="item-details">
+
+    <h2>Banner Details Page</h2>
+    
+    <div id="banner-details"></div>
+</section>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var urlParams = new URLSearchParams(window.location.search);
+        var bannerId = urlParams.get('id');
+        var bannerDetails = getBannerDetailsById(bannerId);
+
+        var bannerDetailsContainer = document.getElementById('banner-details');
+        bannerDetailsContainer.innerHTML = `
+            <h3>${bannerDetails.title}</h3>
+            <p>${bannerDetails.description}</p>
+    
+        `;
+    });
+
+    function getBannerDetailsById(bannerId) {
+        var banners = {
+            '1': { title: 'Special Offer 1', description: 'Description for special offer 1.' },
+            '2': { title: 'Special Offer 2', description: 'Description for special offer 2.' },
+            '3': { title: 'Special Offer 3', description: 'Description for special offer 3.' }
+        };
+
+        return banners[bannerId];
+    }
+</script>
