@@ -371,3 +371,74 @@ section {
   font-size: 1.5rem;
   color: gold;
 }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.quick-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5em;
+  text-decoration: none;
+  align-items: center;
+}
+
+.navigation {
+  margin-top: 10px;
+}
+
+.navigation nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center the navigation links */
+}
+
+.navlink {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.share {
+  margin-top: 10px;
+}
+
+.share a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.credit {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.credit p {
+  margin: 0;
+}
+
+.credit span {
+  font-weight: bold;
+}
+
+.credit img {
+  max-width: 100px;
+}
