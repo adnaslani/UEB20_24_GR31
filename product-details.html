@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+</head>
+<body>
+
+<section class="product-details">
+    <h2>Product Details Page</h2>
+    <div id="product-details"></div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var urlParams = new URLSearchParams(window.location.search);
+        var productId = urlParams.get('id');
+
+        var productDetails = getProductDetailsById(productId);
+
+        var productDetailsContainer = document.getElementById('product-details');
+        productDetailsContainer.innerHTML = `
+            <h3>${productDetails.name}</h3>
+            <p>${productDetails.description}</p>
+            <div class="price">${productDetails.price} <span>${productDetails.discountedPrice}</span></div>`;
+    });
+    function getProductDetailsById(productId) {
+        var products = {
+            '1': { name: 'Smartphones', description: 'Smartphones description.', price: '$249.99', discountedPrice: '$399.99' },
+            '2': { name: 'Smartwatch', description: 'Smartwatch description.', price: '$249.99', discountedPrice: '$399.99' },
+            '3': { name: 'Headphones', description: 'Headphones description.', price: '$249.99', discountedPrice: '$399.99' }
+        };
+
+        return products[productId];
+    }
+</script>
+
+</body>
+</html>
