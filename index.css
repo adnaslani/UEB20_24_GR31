@@ -21,7 +21,7 @@ html {
 }
 
 html {
-  scrollbar-color: #eee #0984e3;
+  scrollbar-color: #eee #256981;
 }
 
 
@@ -39,11 +39,11 @@ section {
   text-align: center;
   margin-bottom: 3rem;
   font-size: 3.5rem;
-  color: #333;
+  color: #efebeb;
 }
 
 .heading span {
-  color: #0984e3;
+  color: #53a8b6;
 }
 
 .btn {
@@ -54,7 +54,7 @@ section {
   font-size: 1.7rem;
   color: #fff;
   cursor: pointer;
-  background: #0984e3;
+  background: #53a8b6;
 }
 
 .btn:hover {
@@ -68,7 +68,7 @@ section {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: #0984e3;
+  background: #33a4b5;
 }
 
 .header .flex{
@@ -351,7 +351,6 @@ section {
 
 .arrivals .box-container .box .content h3 {
   font-size: 2rem;
-  color: #333;
 }
 
 .arrivals .box-container .box .content .price {
@@ -376,62 +375,68 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   background-color: #333;
   color: #fff;
-  padding: 20px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border box;
 }
 
 .quick-links {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+  flex-direction: center;
+  justify-content: space-between;
 }
 
 .logo {
   color: #fff;
-  font-size: 1.5em;
+  font-size: 2em;
   text-decoration: none;
+  display: flex;
   align-items: center;
 }
 
 .navigation {
-  margin-top: 10px;
+  margin: 0 auto;
 }
 
 .navigation nav ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
   display: flex;
-  justify-content: center; /* Center the navigation links */
+
 }
 
 .navlink {
   text-decoration: none;
   color: #fff;
-  margin-right: 20px;
+  margin: 0 10px;
+  font-size: large;
 }
 
 .share {
-  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  font-size: large;
 }
 
 .share a {
   color: #fff;
   text-decoration: none;
   margin-right: 10px;
-  align-items: center;
 }
 
 .credit {
   margin-top: 20px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  width: 100%;
 }
 
 .credit p {
+
   margin: 0;
 }
 
@@ -442,3 +447,71 @@ section {
 .credit img {
   max-width: 100px;
 }
+
+footer {
+  background: #2d3436;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  color: #0984e3;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #74b9ff;
+}
+
+.intro {
+  padding: 3rem 2rem;
+  margin: 0 auto;
+  width:auto;
+  position: relative;
+}
+
+.welcome-message h2,
+.introduction h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.introduction h2 {
+  margin-top: 2rem;
+}
+
+.welcome-message p,
+.introduction p {
+  font-size: 1.7rem;
+  line-height: 2;
+  text-align: center;
+}
+
+#myVideo {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.8;
+}
+.welcome-message,
+.introduction {
+  position: relative;
+  z-index: 1;
+  color: #ffffff; /* Set text color to be visible against the video background */
+  padding: 30px; /* Add padding for better visibility */
+}
+
+
+
