@@ -509,8 +509,8 @@ footer a:hover {
 .introduction {
   position: relative;
   z-index: 1;
-  color: #ffffff; /* Set text color to be visible against the video background */
-  padding: 30px; /* Add padding for better visibility */
+  color: #ffffff; 
+  padding: 30px; 
 }
 
 
