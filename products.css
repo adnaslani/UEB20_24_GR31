@@ -136,13 +136,10 @@ section {
     color: gold;
 }
 
-#search-btn {
-    display: none;
-}
-  
   
 #search-btn {
     display: none;
+    align-items: center;
   }
   
   .side-bar {
@@ -377,48 +374,7 @@ section {
     color: #333;
   }
   
-  .info-container .box-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
-    gap: 2rem;
-  }
-  
-  .info-container .box-container .box {
-    background: #fff;
-    border-radius: .5rem;
-    text-align: center;
-    padding: 2rem;
-    border: 0.2rem solid #333;
-    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-  }
-  
-  .info-container .box-container .box i {
-    height: 7.5rem;
-    width: 7.5rem;
-    line-height: 7.5rem;
-    font-size: 2.5rem;
-    border-radius: 50%;
-    margin-bottom: .5rem;
-    background: #0984e3;
-    color: #fff;
-  }
-  
-  .info-container .box-container .box h3 {
-    font-size: 2rem;
-    padding: .5rem 0;
-    color: #333;
-  }
-  
-  .info-container .box-container .box p {
-    font-size: 1.5rem;
-    line-height: 2;
-    color: #666;
-  }
- 
-.category .box-container {
+  .category .box-container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (minmax(14rem, 1fr))[auto-fit];
@@ -428,7 +384,7 @@ section {
   
   .category .box-container .box {
     text-align: center;
-    border-radius: .5rem;
+    border-radius: .4rem;
     border: 0.2rem solid #333;
     padding: 2rem;
     background: #fff;
@@ -657,8 +613,77 @@ section {
     z-index: -1;
     opacity: 0.8;
   }
-  
 
+
+.tv-models {
+    margin: 20px 0;
+}
+
+.tv-model {
+    height: 250px;
+    background-color: #fff;
+    height: auto;
+    width: 800px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.tv-model h3 {
+    text-align: center;
+    font-size: 3rem;
+    color: #333;
+
+}
+
+.tv-model p {
+    font-size: 1.5rem;
+    margin: 5px 0;
+    color: #666;
+}
+
+.tv-model p.price {
+    color: #267ce4; 
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.iconss {
+    display: flex;
+    margin-left: auto; 
+
+}
+
+.iconss a {
+    font-size: 2.5em;
+    color: #333; 
+    margin-right: 15px; 
+    text-decoration: none;
+    transition: color 0.3s ease; 
+
+}
+
+.iconss a:hover {
+    color: #2e84ca;
+}
+
+.tv-image {
+    border-radius: 8px;
+    margin-left: 20px; 
+    margin-bottom: 20px;
+    margin-right: 20px;
+    height: auto;
+    width: 400px;
+}
+
+.tv-modelimg{
+    display:inline-flex;
+    height: 250px;
+    margin-left: auto;
+    margin-right: 20px;
+}
   
 
   
