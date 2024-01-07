@@ -190,7 +190,7 @@ section {
 
 .side-bar .user a {
   font-size: 1.5rem;
-  color: #0984e3;
+  color: ##256981;
 }
 
 .side-bar .user a:hover {
@@ -209,7 +209,7 @@ section {
 }
 
 .side-bar .navbar a:hover {
-  color: #0984e3;
+  color: #256981;
 }
 
 .side-bar .navbar a:hover i {
@@ -252,7 +252,7 @@ section {
 
 .home-container .home .slide .content span {
   font-size: 2rem;
-  color: #0984e3;
+  color: #256981;
 }
 
 .home-container .home .slide .content h3 {
@@ -303,7 +303,7 @@ section {
 
 .banner .box-container .box .content span {
   font-size: 1.7rem;
-  color: #0984e3;
+  color: #256981;
 }
 
 .banner .box-container .box .content h3 {
@@ -356,7 +356,7 @@ section {
 .arrivals .box-container .box .content .price {
   padding-top: .5erm;
   font-size: 2rem;
-  color: #0984e3;
+  color: #256981;
   padding-bottom: .7rem;
 }
 
@@ -461,13 +461,13 @@ footer p {
 }
 
 footer a {
-  color: #0984e3;
+  color: #256981e3;
   text-decoration: underline;
   font-weight: bold;
 }
 
 footer a:hover {
-  color: #74b9ff;
+  color: #256981;
 }
 
 .intro {
