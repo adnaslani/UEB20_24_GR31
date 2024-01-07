@@ -16,7 +16,7 @@
     <header class="header">
         <section class="flex">
 
-            <a href="home.html" class="logo"> <i class="fas fa-store"></i> ??? </a>
+            <a href="home.html" class="logo"> <i class="fas fa-store"></i>  iShopTech </a>
     
             <form action="" class="search-form">
                 <input type="search" id="search-box" placeholder="search here...">
@@ -34,7 +34,7 @@
         </section>
     </header>
 
-    <nav class="navbar">
+    <!-- <nav class="navbar">
         <a href="home.html"> <i class="fas fa-angle-right"></i> Home </a>
         <a href="about.html"> <i class="fas fa-angle-right"></i> About </a>
         <a href="products.html"> <i class="fas fa-angle-right"></i> Products </a>
@@ -42,10 +42,12 @@
         <a href="login.html"> <i class="fas fa-angle-right"></i> Login </a>
         <a href="register.html"> <i class="fas fa-angle-right"></i> Register </a>
         <a href="cart.html"> <i class="fas fa-angle-right"></i> Cart </a>
-    </nav>
+    </nav> -->
 
     </div>
-
+    <video autoplay muted loop id="myVideo">
+        <source src="images/about-video-1.mp4" type="video/mp4">
+      </video>
     <section class="about">
 
         <div class="image">
@@ -54,13 +56,13 @@
 
         <div class="content">
             <div>
-               <h3> Welcome to ##Shop Name## - Where Innovation Meets Quality </h3>
-               <p> At ##Shop Name##, we're more than just an electronics store; we're a passionate team dedicated to bringing you the latest and greatest in technology. Our journey began years ago with a simple yet ambitious vision: <b>to provide our customers with top-notch electronics that seamlessly blend <i>innovation</i>, <i>functionality</i>, and <i>affordability</i>.</b></p>
+               <h3> Welcome to iShopTech - Where Innovation Meets Quality </h3>
+               <p> At iShopTech, we're more than just an electronics store; we're a passionate team dedicated to bringing you the latest and greatest in technology. Our journey began years ago with a simple yet ambitious vision: <b>to provide our customers with top-notch electronics that seamlessly blend innovation, functionality, and affordability.</b></p>
             </div>
             <div>
                 <h3> Our Story: A Spark Ignites </h3>
                 <p> It all started with a shared love for cutting-edge gadgets and a desire to create a haven for tech enthusiasts. The team embarked on a mission to curate a collection of electronics that not only meet the highest standards but also reflect our commitment to your satisfaction. </p>
-                <p> What sets us apart is our unwavering <b><i>dedication</i></b> to <b><i>quality</i></b>. Every product on our shelves undergoes rigorous testing to ensure it meets our stringent standards. Our experienced team, comprised of tech enthusiasts and industry experts, handpicks each item with an eye for innovation and reliability. </p>
+                <p> What sets us apart is our unwavering <b>dedication</b> to <b>quality</b>. Every product on our shelves undergoes rigorous testing to ensure it meets our stringent standards. Our experienced team, comprised of tech enthusiasts and industry experts, handpicks each item with an eye for innovation and reliability. </p>
             </div>
             <div>
                 <h3> Mission and Values: Guiding Our Path </h3>
@@ -113,19 +115,19 @@
             </div>
     </div>
 </section>    
-<section class="Q&A">
+<section class="faq">
 
-    <h1 class="heading"> questions & <span>answers</span> </h1>
+    <h1 class="heading"> Questions & <span>Answers</span> </h1>
 
     <div class="accordion-container">
 
         <div class="accordion">
             <div class="accordion-heading">
-                <h3>How long has ##Shop Name### been in business?</h3>
+                <h3>How long has iShopTech been in business?</h3>
                 <i class="fas fa-angle-down"></i>
             </div>
             <p class="accordioin-content">
-                ###Shop Name### was established in 1996. With 28 years of experience, we've been proudly serving tech enthusiasts with quality electronics and exceptional service.
+                iShopTech was established in 1996. With 28 years of experience, we've been proudly serving tech enthusiasts with quality electronics and exceptional service.
             </p>
         </div>
 
@@ -145,16 +147,15 @@
                 <i class="fas fa-angle-down"></i>
             </div>
             <p class="accordioin-content">
-                <ul>
-                    <li>Navigate to the "Products" page on our website.</li>
-                    <li>Browse through our categories or use the search feature to find the desired products.</li>
-                    <li>Click on the product you wish to purchase to view detailed information.</li>
-                    <li>Once you've chosen your items, click the "Add to Cart" button.</li>
-                    <li>Click on the "Proceed To Checkout" button to proceed with your order.</li>
-                    <li>Provide the necessary shipping information.</li>
-                    <li>Select your preferred shipping method and review the associated costs.</li>
-                  </ul>
+                Navigate to the "Products" page on our website. <br>
+                Browse through our categories or use the search feature to find the desired products. <br>
+                Click on the product you wish to purchase to view detailed information.<br>
+                Once you've chosen your items, click the "Add to Cart" button.<br>
+                Click on the "Proceed To Checkout" button to proceed with your order.<br>
+                Provide the necessary shipping information.<br>
+                Select your preferred shipping method and review the associated costs.<br>
             </p>
+                
         </div>
 
         <div class="accordion">
@@ -168,17 +169,20 @@
         </div>
 
     </div>
+    </section>
 
-    <section class="connect-section">
-        <h3>Connect With Us: Your Journey Starts Here</h3>
+    <section>
+        <h3 class="heading">Connect With Us: Your Journey Starts Here</h3>
+        <div class="connect-section">
         <p>
           We invite you to explore our collection, connect with our team, and embark on a journey through the world of technology with 
-          <span class="shop-name">###Shop Name###</span>. Whether you're a seasoned tech enthusiast or just beginning your exploration, we're here to guide you.
+          <span class="shop-name">iShopTech</span>. Whether you're a seasoned tech enthusiast or just beginning your exploration, we're here to guide you.
         </p>
         <p>
-          Thank you for choosing <span class="shop-name">###Shop Name###</span>.
+          Thank you for choosing <span class="shop-name">iShopTech</span>.
           Let's embark on a tech-filled adventure together!
         </p>
+        </div>
       </section>
 
 </section>
@@ -234,5 +238,25 @@
     
     </section>
 
+    <script>
+        // Get all accordion elements
+        const accordions = document.querySelectorAll('.faq .accordion-container .accordion');
+      
+        // Add click event listener to each accordion
+        accordions.forEach(accordion => {
+          accordion.addEventListener('click', function () {
+            // Toggle the active class for the clicked accordion
+            this.classList.toggle('active');
+      
+            // Hide all other accordions
+            accordions.forEach(otherAccordion => {
+              if (otherAccordion !== accordion) {
+                otherAccordion.classList.remove('active');
+              }
+            });
+          });
+        });
+      </script>
+      
 </footer>
 </html>
