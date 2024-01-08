@@ -252,67 +252,56 @@ section {
     padding: 1rem 0;
     line-height: 2;
   }
-  
-  .team .slide {
-    width: 35rem;
-    padding: 3rem;
-    text-align: center;
-    border: 0.2rem solid #333;
-    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-    border-radius: .5rem;
-    background: #fff;
-    user-select: none;
-  }
-  
   .team {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: stretch;
-  }
-  
-  .team .slide {
-    flex: 1 1 30%;
+}
+
+.team .slide {
+    width: 20rem;
     margin: 1rem;
+    padding: 1.2rem;
+    text-align: center;
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
     background-color: #fff;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    padding: 2rem;
-    text-align: center;
-    border: 1px solid #ddd; /* Add border around each box */
-    border-radius: 10px; /* Add border radius for rounded corners */
+    flex-direction: column;
+}
 
-  }
-
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .team .slide {
-      flex: 0 0 calc(50% - 2rem); /* Adjust the width for two in the second row on smaller screens */
+        flex: 0 0 calc(50% - 2rem); 
     }
-  }
-  .team .slide img {
+}
+
+.team .slide img {
     height: 10rem;
     width: 10rem;
     border-radius: 50%;
     margin-bottom: 1rem;
-  }
-  
-  .team .slide h3 {
+}
+
+.team .slide h3 {
     font-size: 2rem;
     color: #333;
-  }
-  
-  .team .slide span {
+}
+
+.team .slide span {
     color: #256981;
     font-size: 1.7rem;
-  }
-  
-  .team .slide p {
-    font-size: 1.5rem;
+}
+
+.team .slide p {
+    font-size: 1.2rem;
     line-height: 2;
     color: #666;
     padding-top: 1rem;
-  }
-  
+    text-align: left;
+}
+
  
 .category .box-container {
     display: -ms-grid;
