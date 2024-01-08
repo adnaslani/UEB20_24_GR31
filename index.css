@@ -443,52 +443,6 @@ footer a:hover {
   max-width: 100px;
 }
 
-/* .footer {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  background: #2d3436;
-
-}
-
-.footer .quick-links {
-  position: relative;
-  padding: 1rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 3rem;
-}
-
-.footer .quick-links .logo {
-  font-size: 3rem;
-  color: #fff;
-  font-weight: bolder;
-}
-
-.footer .quick-links .logo i {
-  color: gold;
-}
-
-.footer p {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-
-footer a {
-  color: #256981e3;
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-footer a:hover {
-  color: #256981;
-} */
-
 .intro {
   padding: 3rem 2rem;
   margin: 0 auto;
