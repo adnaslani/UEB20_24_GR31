@@ -1,77 +1,158 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Cart</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+<!DOCTYPE html>	
+	<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shopie - Your Online Shopping Destination</title>
+	<style>
+	body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4;
+	}
+	  <header class="header">
 
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-        }
-
-        section {
-            margin: 20px;
-        }
-
-        cart-item {
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin-bottom: 10px;
-            background-color: #fff;
-        }
-
-        .subtotal {
-            font-weight: bold;
-            margin-top: 10px;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Your Shopping Cart</h1>
+        <section class="flex">
+    
+            <a href="index.html" class="logo"> <i class="fas fa-store"></i> iShopTech </a>
+    
+            <form action="" class="search-form">
+                <input type="search" id="search-box" placeholder="search here...">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+    
+            <div class="icons">
+                <button id="toggle-sidebar"><div id="menu-btn" class="fas fa-bars"></div></button>
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="login.html" class="fas fa-user"></a>
+                <a href="favorites.html" class="fas fa-heart"></a>
+                <a href="cart.html" class="fas fa-shopping-cart"></a>
+            </div>
+    
+        </section>
+    
     </header>
 
-    <section>
-        <div class="cart-item">
-            <h2>Smartphone</h2>
-            <p>Quantity: 1</p>
-            <p>Price: $249.99 $399.99</p>
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 1em 0;
+	}
+	section {
+	margin: 20px;
+	text-align: center;
+	}
+	.login-container,
+	.register-container {
+	max-width: 400px;
+	margin: auto;
+	background-color: #fff;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	margin-top: 20px;
+	}
+	footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 1em 0;
+	}
+	</style>
+	</head>
+	<body>
+	<header>
+	<h1>iShopTech - Your Online Shopping Destination</h1>
+	</header>
+	<section>
+	<!-- Login Form -->
+	<div class="login-container">
+	<h2>Login Now</h2>
+	<form>
+	<div>
+	<label for="loginEmail">Enter Your Email</label>
+	<input type="email" id="loginEmail" required>
+	</div>
+	<div>
+	<label for="loginPassword">Enter Your Password</label>
+	<input type="password" id="loginPassword" required>
+	</div>
+	<div>
+	<input type="checkbox" id="rememberMe">
+	<label for="rememberMe">Remember Me</label>
+	</div>
+	<button type="submit">Login</button>
+	</form>
+	<p>Don't have an account? <a href="#register">Register Now</a></p>
+	</div>
+	<!-- Register Form -->
+	<div id="register" class="register-container">
+	<h2>Register Now</h2>
+	<form>
+	<div>
+	<label for="registerEmail">Enter Your Email</label>
+	<input type="email" id="registerEmail" required>
+	</div>
+	<div>
+	<label for="registerPassword">Enter Your Password</label>
+	<input type="password" id="registerPassword" required>
+	</div>
+	<button type="submit">Register</button>
+	</form>
+	<p>Already have an account? <a href="#login">Login Now</a></p>
+	</div>
+	</section>
+<footer class="footer">
+
+    <section class="quick-links">
+
+        <a href="home.html" class="logo"> <i class="fas fa-store"></i> shopie </a>
+    
+        <div class="navigation">
+            <nav>
+                <ul>
+                    <a href="index.html" class="navlink">
+                        <li> Home </li>
+                    </a>
+                    <a href="about.html" class="navlink">
+                        <li> About </li>
+                    </a>
+                    <a href="products.html" class="navlink">
+                        <li> Products </li>
+                    </a>
+                    <a href="contact.html" class="navlink">
+                        <li> Contact</li>
+                    </a>
+                    <a href="login.html" class="navlink">
+                        <li> Login</li>
+                    </a>
+                    <a href="register.html" class="navlink">
+                        <li> Register </li>
+                    </a>
+                    <a href="cart.html" class="navlink">
+                        <li> Cart </li>
+                    </a>
+                </ul>
+            </nav>
         </div>
-
-     
-
-        <div class="subtotal">
-            <p>Subtotal: $1499.94</p>
-            <p>Discount: -$99.94</p>
-            <p>Total: $1400.00</p>
+    
+        <div class="share">
+            <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+            <a href="https://twitter.com/?lang=en" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+            <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
         </div>
-
-        <button onclick="proceedToCheckout()">Proceed to Checkout</button>
+    
     </section>
-       <p> created by <span>Group 31
+    
+    <section class="credit">
+    
+        <p> created by <span>Group 31
         </span> | all rights reserved! </p>
     
-        function proceedToCheckout() {
-            alert("Redirecting to checkout page...");
-           
-        }
-    </script>
-</body>
-</html>
+        <img src="images/card_img.png" alt="">
+    
+    </section>
+
+</footer>
