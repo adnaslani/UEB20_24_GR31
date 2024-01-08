@@ -12,7 +12,30 @@
             background-color: #f4f4f4;
         }
 
-        header {
+    	  <header class="header">
+
+        <section class="flex">
+    
+            <a href="index.html" class="logo"> <i class="fas fa-store"></i> iShopTech </a>
+    
+            <form action="" class="search-form">
+                <input type="search" id="search-box" placeholder="search here...">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+    
+            <div class="icons">
+                <button id="toggle-sidebar"><div id="menu-btn" class="fas fa-bars"></div></button>
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="login.html" class="fas fa-user"></a>
+                <a href="favorites.html" class="fas fa-heart"></a>
+                <a href="cart.html" class="fas fa-shopping-cart"></a>
+            </div>
+    
+        </section>
+    
+    </header>
+
+            
             background-color: #333;
             color: #fff;
             text-align: center;
@@ -88,10 +111,59 @@
             <p>Already have an account? <a href="#login">Login Now</a></p>
         </div>
     </section>
+<footer class="footer">
 
-    <footer>
-        <p>Created by Group 31 | All rights reserved!</p>
-    </footer>
+    <section class="quick-links">
+
+        <a href="home.html" class="logo"> <i class="fas fa-store"></i> shopie </a>
+    
+        <div class="navigation">
+            <nav>
+                <ul>
+                    <a href="index.html" class="navlink">
+                        <li> Home </li>
+                    </a>
+                    <a href="about.html" class="navlink">
+                        <li> About </li>
+                    </a>
+                    <a href="products.html" class="navlink">
+                        <li> Products </li>
+                    </a>
+                    <a href="contact.html" class="navlink">
+                        <li> Contact</li>
+                    </a>
+                    <a href="login.html" class="navlink">
+                        <li> Login</li>
+                    </a>
+                    <a href="register.html" class="navlink">
+                        <li> Register </li>
+                    </a>
+                    <a href="cart.html" class="navlink">
+                        <li> Cart </li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    
+        <div class="share">
+            <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+            <a href="https://twitter.com/?lang=en" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+            <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
+        </div>
+    
+    </section>
+    
+    <section class="credit">
+    
+        <p> created by <span>Group 31
+        </span> | all rights reserved! </p>
+    
+        <img src="images/card_img.png" alt="">
+    
+    </section>
+
+</footer>
 
 </body>
 </html>
