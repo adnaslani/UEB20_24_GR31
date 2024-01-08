@@ -638,7 +638,7 @@ section {
 }
 
 .tv-model p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 5px 0;
     color: #666;
 }
@@ -657,6 +657,7 @@ section {
 }
 
 .iconss a {
+  margin-top: 5px;;
     font-size: 2.5em;
     color: #333; 
     margin-right: 15px; 
@@ -680,7 +681,7 @@ section {
 
 .tv-modelimg{
     display:inline-flex;
-    height: 280px;
+    height: 300px;
     margin-left: auto;
     margin-right: 20px;
 }
