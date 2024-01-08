@@ -14,9 +14,10 @@
     </head>
 
     <header class="header">
-        <section class="flex">
 
-            <a href="home.html" class="logo"> <i class="fas fa-store"></i>  iShopTech </a>
+        <section class="flex">
+    
+            <a href="index.html" class="logo"> <i class="fas fa-store"></i> iShopTech </a>
     
             <form action="" class="search-form">
                 <input type="search" id="search-box" placeholder="search here...">
@@ -24,26 +25,32 @@
             </form>
     
             <div class="icons">
-                <div id="menu-btn" class="fas fa-bars"></div>
+                <button id="toggle-sidebar"><div id="menu-btn" class="fas fa-bars"></div></button>
                 <div id="search-btn" class="fas fa-search"></div>
                 <a href="login.html" class="fas fa-user"></a>
                 <a href="favorites.html" class="fas fa-heart"></a>
                 <a href="cart.html" class="fas fa-shopping-cart"></a>
             </div>
-
+    
         </section>
+    
     </header>
-
-    <!-- <nav class="navbar">
-        <a href="home.html"> <i class="fas fa-angle-right"></i> Home </a>
-        <a href="about.html"> <i class="fas fa-angle-right"></i> About </a>
-        <a href="products.html"> <i class="fas fa-angle-right"></i> Products </a>
-        <a href="contact.html"> <i class="fas fa-angle-right"></i> Contact </a>
-        <a href="login.html"> <i class="fas fa-angle-right"></i> Login </a>
-        <a href="register.html"> <i class="fas fa-angle-right"></i> Register </a>
-        <a href="cart.html"> <i class="fas fa-angle-right"></i> Cart </a>
-    </nav> -->
-
+    
+    <div class="side-bar">
+    
+        <button id="toggle-sidebar"><div id="close-side-bar" class="fas fa-times"></div></button>
+    
+        <nav class="navbar">
+            <a href="index.html"> <i class="fas fa-angle-right"></i> home </a>
+            <a href="about.html"> <i class="fas fa-angle-right"></i> about </a>
+            <a href="products.html"> <i class="fas fa-angle-right"></i> products </a>
+            <a href="contact.html"> <i class="fas fa-angle-right"></i> contact </a>
+            <a href="login.html"> <i class="fas fa-angle-right"></i> login </a>
+            <a href="register.html"> <i class="fas fa-angle-right"></i> register </a>
+            <a href="cart.html"> <i class="fas fa-angle-right"></i> cart </a>
+        </nav>
+    
+    </div>
     </div>
     <video autoplay muted loop id="myVideo">
         <source src="images/about-video-1.mp4" type="video/mp4">
@@ -234,29 +241,9 @@
     
         <p> created by <span>Group 31 </span> | all rights reserved! </p>
     
-        <img src="images/card_img.png" alt="">
-    
     </section>
 
-    <script>
-        // Get all accordion elements
-        const accordions = document.querySelectorAll('.faq .accordion-container .accordion');
       
-        // Add click event listener to each accordion
-        accordions.forEach(accordion => {
-          accordion.addEventListener('click', function () {
-            // Toggle the active class for the clicked accordion
-            this.classList.toggle('active');
-      
-            // Hide all other accordions
-            accordions.forEach(otherAccordion => {
-              if (otherAccordion !== accordion) {
-                otherAccordion.classList.remove('active');
-              }
-            });
-          });
-        });
-      </script>
-      
+      <script src="about.js"></script>
 </footer>
 </html>
