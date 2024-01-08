@@ -145,88 +145,71 @@ section {
     display: none;
   }
   
-  .side-bar {
-    position: fixed;
-    top: 0;
-    left: -110%;
-    height: 100%;
-    width: 30rem;
-    background: #fff;
-    z-index: 10000;
-  }
-  
-  .side-bar.active {
-    left: 0;
-    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
-  }
+ 
+ 
+.side-bar {
+  position: fixed;
+  top: 0;
+  left: -110%;
+  height: 100%;
+  width: 30rem;
+  background: #fff;
+  z-index: 10000;
+}
 
-  .side-bar #close-side-bar {
-    position: absolute;
-    top: 1rem;
-    right: 2rem;
-    font-size: 4rem;
-    cursor: pointer;
-    color: #666;
-  }
-  
-  .side-bar #close-side-bar:hover {
-    transform: rotate(90deg);
-    color: #333;
-  }
-  
-  .side-bar .user {
-    padding: 2rem;
-    background: #eee;
-    text-align: center;
-  }
-  
-  .side-bar .user img {
-    height: 17rem;
-    width: 17rem;
-    border-radius: 50%;
-    border: 1rem solid #fff;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-    margin-bottom: .5rem;
-  }
-  
-  .side-bar .user h3 {
-    padding: .5rem 0;
-    font-size: 1.7rem;
-    color: #666;
-  }
-  
-  .side-bar .user a {
-    font-size: 1.5rem;
-    color: #256981;
-  }
-  
-  .side-bar .user a:hover {
-    color: #333;
-  }
-  
-  .side-bar .navbar {
-    padding-top: 1rem;
-  }
-  
-  .side-bar .navbar a {
-    display: block;
-    padding: 1rem 2rem;
-    font-size: 1.7rem;
-    color: #666;
-  }
-  
-  .side-bar .navbar a:hover {
-    color: #256981;
-  }
+.side-bar.active {
+  left: 0;
+          box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
+}
+
+.side-bar #close-side-bar {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  color: #666;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.side-bar #close-side-bar:hover {
+          transform: rotate(90deg);
+  color: #333;
+}
+#toggle-sidebar {
+  background: #33a4b5; 
+  color: #fff;
+}
+
+#toggle-sidebar:hover {
+  background: #33a4b5;
+}
+
+.side-bar .navbar {
+  padding-top: 1rem;
+}
+
+.side-bar .navbar a {
+  display: block;
+  padding: 1rem 2rem;
+  font-size: 1.7rem;
+  color: #666;
+}
+
+.side-bar .navbar a:hover {
+  color: #256981;
+}
+
+.side-bar .navbar a:hover i {
+  padding-right: 2rem;
+}
+
+.side-bar .navbar a i {
+  padding-right: .5rem;
+}
   
 
   
-  
-  .swiper-button-next::after,
-  .swiper-button-prev::after {
-    font-size: 3rem;
-    color: #333;
-  }
 
   .about {
     display: -webkit-box;
@@ -540,26 +523,90 @@ section {
     max-width: 100px;
   }
   
-  footer {
-    background: #2d3436;
+  .footer {
+    position: -webkit-sticky;
+    position: sticky;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
     color: #fff;
-    padding: 2rem 0;
-    text-align: center;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border box;
   }
   
-  footer p {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+  .quick-links {
+    display:inline-flex;
+    flex-direction:row;
+    justify-content: space-between;
   }
   
-  footer a {
-    color: #256981;
-    text-decoration: underline;
-    font-weight: bold;
+  .logo {
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    display:inline-block;
+    align-items: center;
+    padding-right: 130px;
+  }
+  
+  .navigation {
+    margin: 0 auto;
+    font-size: 2.5rem;
+  }
+  
+  .navigation nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .navlink {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-size: 2rem;
+  }
+  
+  .share {
+    display: inline-block;
+    align-items: center;
+    font-size: 2rem;
+    padding-left: 120px;
+  }
+  
+  .share a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0px 10px 5px 10px;
+   
   }
   
   footer a:hover {
     color: #256981;
+  }
+  
+  .credit {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .credit p {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .credit span {
+    font-weight: bold;
+  }
+  
+  .credit img {
+    max-width: 100px;
   }
 
   #myVideo {
