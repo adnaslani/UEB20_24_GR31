@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Favorite Posts</title>
+  <style>
+    /* Some basic styles for demonstration purposes */
+    .post {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .favorite {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Favorite Posts</h1>
+  
+  <!-- Sample posts -->
+  <div class="post" id="post1">
+    <h2>Post 1</h2>
+    <p>This is the first post.</p>
+    <button onclick="toggleFavorite('post1')">Add to Favorites</button>
+  </div>
+  
+  <div class="post" id="post2">
+    <h2>Post 2</h2>
+    <p>This is the second post.</p>
+    <button onclick="toggleFavorite('post2')">Add to Favorites</button>
+  </div>
+  
+  <div class="post" id="post3">
+    <h2>Post 3</h2>
+    <p>This is the third post.</p>
+    <button onclick="toggleFavorite('post3')">Add to Favorites</button>
+  </div>
+  
+  <hr>
+  
+  <h2>Favorite Posts</h2>
+  <div id="favoritePosts">
+    <!-- This will be populated with favorite posts -->
+  </div>
+
+  <script>
+    // Function to toggle favorites
+    function toggleFavorite(postId) {
+      const post = document.getElementById(postId);
+      const favoritePosts = document.getElementById("favoritePosts");
+
+      // Check if the post is already in favorites
+      if (post.classList.contains("favorite")) {
+        // Remove from favorites
+        post.classList.remove("favorite");
+        const favoritePost = document.getElementById(`fav_${postId}`);
+        favoritePost.remove();
+      } else {
+        // Add to favorites
+        post.classList.add("favorite");
+        const favoritePost = document.createElement("div");
+        favoritePost.id = `fav_${postId}`;
+        favoritePost.innerHTML = post.innerHTML;
+        favoritePosts.appendChild(favoritePost);
+      }
+    }
+  </script>
+</body>
+</html>
