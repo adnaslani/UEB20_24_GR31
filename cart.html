@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        section {
+            margin: 20px;
+        }
+
+        cart-item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #fff;
+        }
+
+        .subtotal {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Shopping Cart</h1>
+    </header>
+
+    <section>
+        <div class="cart-item">
+            <h2>Smartphone</h2>
+            <p>Quantity: 1</p>
+            <p>Price: $249.99 $399.99</p>
+        </div>
+
+     
+
+        <div class="subtotal">
+            <p>Subtotal: $1499.94</p>
+            <p>Discount: -$99.94</p>
+            <p>Total: $1400.00</p>
+        </div>
+
+        <button onclick="proceedToCheckout()">Proceed to Checkout</button>
+    </section>
+       <p> created by <span>Group 31
+        </span> | all rights reserved! </p>
+    
+        function proceedToCheckout() {
+            alert("Redirecting to checkout page...");
+           
+        }
+    </script>
+</body>
+</html>
