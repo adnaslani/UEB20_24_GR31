@@ -6,30 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
 
-    <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <!-- swiper css link  -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
-    <!-- cusom css file link  -->
     <link rel="stylesheet" href="index.css">
-
+<!-- 
     <script src="arrivals.js" defer></script>
     <script src="banners.js" defer></script>
     <script src="items.js" defer></script>
-    <script src="countdown.js" defer></script>
+    <script src="countdown.js" defer></script> -->
+
 
 </head>
 <body>
     
-<!-- header section starts  -->
 
 <header class="header">
 
     <section class="flex">
 
-        <a href="home.html" class="logo"> <i class="fas fa-store"></i> iShopTech </a>
+        <a href="index.html" class="logo"> <i class="fas fa-store"></i> iShopTech </a>
 
         <form action="" class="search-form">
             <input type="search" id="search-box" placeholder="search here...">
@@ -37,7 +34,7 @@
         </form>
 
         <div class="icons">
-            <div id="menu-btn" class="fas fa-bars"></div>
+            <button id="toggle-sidebar"><div id="menu-btn" class="fas fa-bars"></div></button>
             <div id="search-btn" class="fas fa-search"></div>
             <a href="login.html" class="fas fa-user"></a>
             <a href="favorites.html" class="fas fa-heart"></a>
@@ -48,22 +45,12 @@
 
 </header>
 
-<!-- header section ends -->
-
-<!-- side-bar section starts -->
-
 <div class="side-bar">
 
-    <div id="close-side-bar" class="fas fa-times"></div>
-
-    <div class="user">
-        <img src="images/user-img.png" alt="">
-        <h3>shaikh anas</h3>
-        <a href="#">log out</a>
-    </div>
+    <button id="toggle-sidebar"><div id="close-side-bar" class="fas fa-times"></div></button>
 
     <nav class="navbar">
-        <a href="home.html"> <i class="fas fa-angle-right"></i> home </a>
+        <a href="index.html"> <i class="fas fa-angle-right"></i> home </a>
         <a href="about.html"> <i class="fas fa-angle-right"></i> about </a>
         <a href="products.html"> <i class="fas fa-angle-right"></i> products </a>
         <a href="contact.html"> <i class="fas fa-angle-right"></i> contact </a>
@@ -74,7 +61,7 @@
 
 </div>
 
-<!-- side-bar section ends -->
+
 <section class="intro">
     <video autoplay muted loop id="myVideo">
         <source src="images/home-video-1.mp4" type="video/mp4">
@@ -106,7 +93,7 @@
                 <div class="content">
                     <span>upto 50% off</span>
                     <h3>smartphones</h3>
-                    <a href="item-details.htmlId=1" class="btn">shop now</a>
+                    <a href="smartphones.html" class="btn">shop now</a>
                 </div>
             </div>
     
@@ -117,7 +104,7 @@
                 <div class="content">
                     <span>upto 50% off</span>
                     <h3>smartwatch</h3>
-                    <a href="item-details.htmlId=2" class="btn">shop now</a>
+                    <a href="smartwatches.html" class="btn">shop now</a>
                 </div>
             </div>
     
@@ -128,13 +115,14 @@
                 <div class="content">
                     <span>upto 50% off</span>
                     <h3>headphones</h3>
-                    <a href="item-details.htmlId=3" class="btn">shop now</a>
+                    <a href="headphones.html" class="btn">shop now</a>
                 </div>
             </div>
             </div>
     
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
+
     
         </div>
     
@@ -146,7 +134,7 @@
 
     <div class="box-container">
 
-        <a href="banner-details.htmlId=1" class="box">
+        <a href="headphones.html" class="box">
             <img src="images/banner-1.jpg" alt="">
             <div class="content">
                 <span>special offer</span>
@@ -154,7 +142,7 @@
             </div>
         </a>
 
-        <a href="banner-details.htmlId=2" class="box">
+        <a href="smartwatches.html" class="box">
             <img src="images/banner-2.jpg" alt="">
             <div class="content">
                 <span>special offer</span>
@@ -162,7 +150,7 @@
             </div>
         </a>
 
-        <a href="banner-details.htmlId=3" class="box">
+        <a href="smartphones.html" class="box">
             <img src="images/banner-3.jpg" alt="">
             <div class="content">
                 <span>special offer</span>
@@ -174,9 +162,6 @@
 
 </section>
 
-<!-- banner section ends -->
-
-<!-- arrivals section starts  -->
 
 <section class="arrivals">
 
@@ -198,8 +183,13 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
-                </div>
+                </div>  
             </div>
+            <div class="iconns">
+                <a href="cart.html" class="fas fa-shopping-cart"></a>
+                <br>
+                <a href="favorites.html" class="fas fa-heart"></a>
+                </div>   
         </div>
 
         <div class="box" data-product-id="2">
@@ -218,6 +208,10 @@
                     <i class="fas fa-star-half-alt"></i>
                 </div>
             </div>
+            <div class="iconns">
+                <a href="cart.html" class="fas fa-shopping-cart"></a> <br>
+                <a href="favorites.html" class="fas fa-heart"></a>
+                </div> 
         </div>
 
         <div class="box" data-product-id="3">
@@ -236,6 +230,10 @@
                     <i class="fas fa-star-half-alt"></i>
                 </div>
             </div>
+            <div class="iconns">
+                <a href="cart.html" class="fas fa-shopping-cart"></a> <br>
+                <a href="favorites.html" class="fas fa-heart"></a>
+                </div> 
         </div>
 
         <div class="box" data-product-id="4">
@@ -254,6 +252,10 @@
                     <i class="fas fa-star-half-alt"></i>
                 </div>
             </div>
+            <div class="iconns">
+                <a href="cart.html" class="fas fa-shopping-cart"></a> <br>
+                <a href="favorites.html" class="fas fa-heart"></a>
+                </div> 
         </div>
 
         <div class="box" data-product-id="5">
@@ -272,6 +274,10 @@
                     <i class="fas fa-star-half-alt"></i>
                 </div>
             </div>
+            <div class="iconns">
+                <a href="cart.html" class="fas fa-shopping-cart"></a> <br>
+                <a href="favorites.html" class="fas fa-heart"></a>
+                </div> 
         </div>
 
         <div class="box" data-product-id="6">
@@ -290,6 +296,10 @@
                     <i class="fas fa-star-half-alt"></i>
                 </div>
             </div>
+            <div class="iconns">
+                <a href="cart.html" class="fas fa-shopping-cart"></a> <br>
+                <a href="favorites.html" class="fas fa-heart"></a>
+                </div> 
         </div>
 
     </div>
@@ -301,7 +311,7 @@
 
     <section class="quick-links">
 
-        <a href="home.html" class="logo"> <i class="fas fa-store"></i> iShopTech </a>
+        <a href="index.html" class="logo"> <i class="fas fa-store"></i> iShopTech </a>
     
         <div class="navigation">
             <nav>
@@ -345,13 +355,25 @@
     
         <p> created by <span>Group 31 </span> | all rights reserved! </p>
     
-        <img src="images/card_img.png" alt="">
-    
     </section>
 
 </footer>
 
-<!-- footer section ends -->
+<!-- <script> -->
 
+//     var swiper = new Swiper(".home-slider", {
+//     loop:true,
+//     grabCursor:true,
+//     navigation: {
+//       nextEl: ".swiper-button-next",
+//       prevEl: ".swiper-button-prev",
+//     },
+// });
+
+
+</script>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
