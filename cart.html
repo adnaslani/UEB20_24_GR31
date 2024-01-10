@@ -1,17 +1,20 @@
-<!DOCTYPE html>	
-	<html lang="en">
-	<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Shopie - Your Online Shopping Destination</title>
-	<style>
-	body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-	background-color: #f4f4f4;
-	}
-	  <header class="header">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>about</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="style/cart.css">
+    </head>
+<body>
+    <header class="header">
 
         <section class="flex">
     
@@ -26,88 +29,177 @@
                 <button id="toggle-sidebar"><div id="menu-btn" class="fas fa-bars"></div></button>
                 <div id="search-btn" class="fas fa-search"></div>
                 <a href="login.html" class="fas fa-user"></a>
-                <a href="favorites.html" class="fas fa-heart"></a>
                 <a href="cart.html" class="fas fa-shopping-cart"></a>
             </div>
     
         </section>
     
     </header>
+    
+    <div class="side-bar">
+        <button id="toggle-sidebar"><div id="close-side-bar" class="fas fa-times"></div></button>
+    
+        <div class="nav" id="nav1" >
+            <div class="container">
+                <nav>
+                  <!-- <div class="navicon"> -->
+                    <div class="nav_list_wrapper">
+    
+                      <li><i class="fas fa-angle-right"></i> <a class="nav_link" href="index.html">Home</a></li>
+                      <li><i class="fas fa-angle-right"></i> <a class="nav_link" href="about.html">About</a></li>
+                      <li><i class="fas fa-angle-right"></i> <a class="nav_link" href="products.html">Products</a></li>
+                      <li><i class="fas fa-angle-right"></i> <a class="nav_link" href="contact.html">Contact</a></li>
+                      <li><i class="fas fa-angle-right"></i> <a class="nav_link" href="login.html">Login and Register</a></li>
+                      <li><i class="fas fa-angle-right"></i> <a class="nav_link" href="cart.html">Cart</a></li>
+                    </div>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+    </div>
+    <video autoplay muted loop id="myVideo">
+        <source src="images/about-video-1.mp4" type="video/mp4">
+      </video>
 
-	background-color: #333;
-	color: #fff;
-	text-align: center;
-	padding: 1em 0;
-	}
-	section {
-	margin: 20px;
-	text-align: center;
-	}
-	.login-container,
-	.register-container {
-	max-width: 400px;
-	margin: auto;
-	background-color: #fff;
-	padding: 20px;
-	border: 1px solid #ccc;
-	border-radius: 8px;
-	margin-top: 20px;
-	}
-	footer {
-	background-color: #333;
-	color: #fff;
-	text-align: center;
-	padding: 1em 0;
-	}
-	</style>
-	</head>
-	<body>
-	<header>
-	<h1>iShopTech - Your Online Shopping Destination</h1>
-	</header>
-	<section>
-	<!-- Login Form -->
-	<div class="login-container">
-	<h2>Login Now</h2>
-	<form>
-	<div>
-	<label for="loginEmail">Enter Your Email</label>
-	<input type="email" id="loginEmail" required>
-	</div>
-	<div>
-	<label for="loginPassword">Enter Your Password</label>
-	<input type="password" id="loginPassword" required>
-	</div>
-	<div>
-	<input type="checkbox" id="rememberMe">
-	<label for="rememberMe">Remember Me</label>
-	</div>
-	<button type="submit">Login</button>
-	</form>
-	<p>Don't have an account? <a href="#register">Register Now</a></p>
-	</div>
-	<!-- Register Form -->
-	<div id="register" class="register-container">
-	<h2>Register Now</h2>
-	<form>
-	<div>
-	<label for="registerEmail">Enter Your Email</label>
-	<input type="email" id="registerEmail" required>
-	</div>
-	<div>
-	<label for="registerPassword">Enter Your Password</label>
-	<input type="password" id="registerPassword" required>
-	</div>
-	<button type="submit">Register</button>
-	</form>
-	<p>Already have an account? <a href="#login">Login Now</a></p>
-	</div>
-	</section>
+
+
+      <div  class="bg-light" style="min-height: 800px;">
+      <div class="container">
+          <div class="py-5">          
+          <h2> Checkout form</h2>
+      </div>
+      </div>
+  <div class="container">
+      <h4 class="mb-3"> Billing Address </h4>
+      <form novalidate>
+          <div class="row g-3">
+              <div class="col-sm-6">
+                  <label for="firstName" class="form-label"> First Name </label>
+                  <input id="firstName"type="text" class="form-control" placeholder="Adna" required>
+                  <div class="invalid-feedback"> 
+                      Valid first name is required.
+                  </div>
+              </div>
+              <div class="col-sm-6">
+                  <label for="lastName" class="form-label"> Last Name </label>
+                  <input id="lastName"type="text" class="form-control" placeholder="Aslani" required>
+                  <div class="invalid-feedback"> 
+                      Valid last name is required.
+                  </div>
+              </div>
+              <div class="col-12">
+                  <label for="username" class="form-label"> Username </label>
+                  <div class="input-group"> 
+                      <span class="input-group-text">@</span>
+                      <input id="username" type="text" class="form-control" placeholder="adna10" required>
+                  </div>
+                  <div class="invalid-feedback"> 
+                      Valid last name is required.
+                  </div>
+              </div>
+              <div class="col-md-5">
+                  <label for="country" class="form-label"> Country </label>
+                  <select id="country" class="form-control">
+                      <option value=""> Choose...</option>
+                      <option value="Kosovo"> Kosovo </option>
+                      <option value="Albania"> Albania </option>
+                      <option value="Bosnia and Herzegovina"> Bosnia and Herzegovina </option>
+                  </select>
+                  <div class="invalid-feedback"> 
+                      Valid last name is required.
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <label for="city" class="form-label"> City </label>
+                  <select id="city" class="form-control">
+                      <option value=""> Choose...</option>
+                      <option value="Prizren"> Prizren </option>
+                      <option value="Tirana"> Zenica </option>
+                      <option value="Sarajevo"> Saranda </option>
+                  </select>
+                  <div class="invalid-feedback"> 
+                      Valid last name is required.
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <label for="postcode" class="form-label"> Postcode </label>
+                  <input id="postcode" type="number" class="form-control" placeholder="1234" required>
+                  <div class="invalid-feedback">
+                      Valid last name is required.
+                  </div>
+              </div>
+              <div class="col-12">
+                  <div class="form-check">
+                      <input id="sameAddress" type="checkbox" class="form-check-input">
+                      <label class="form-check-label" for="sameAddress"> Shipping address is the same as billing </label>
+                  </div>
+                  <div class="form-check">
+                      <input id="safeInfo" type="checkbox" class="form-check-input">
+                      <label class="form-check-label" for="safeInfo">Safe this info</label>
+                  </div>
+              </div>
+                  
+                  <hr class="my-4">
+                  
+                  <hr4 class="mb-3">Payment</hr4>
+                  
+                  <div class="form-check">
+                      <input id="creditCard" type="radio" name="Paymentmethod" type="radio" class="form-check-input" checked required>
+                      <label for="creditCard"> CreditCard</label>
+                  </div>
+                  
+                      <div class="form-check">
+                      <input id="creditCard" type="radio" name="Paymentmethod" type="radio" class="form-check-input" checked required>
+                      <label for="directdebit">Direct debit</label>
+                       </div>
+                  
+                  
+                       <!-- <div class="form-check">
+                          <input id="creditCard" type="radio" name="Paymentmethod" type="radio" class="form-check-input" checked required>
+                          <label for="directdebit">direct debit</label>
+                           </div> -->
+                          
+                  
+                  
+                      <div class= "form-check">
+                      <input id="paypal" type="radio" name="Paymentmethod" type="radio" class="form-check-input" checked required>
+                      <label for="paypal"> Paypal </label>
+                       </div>
+                  
+                      <div class="row my-3 gy-3">
+                          <div class="col-md-6">
+                              <label for="fullName" class="form-label"> Name on card </label>
+                              <input id="fullName" type="text" class="form-control">
+                              <small class="text-muted"> Full name as displayed on card. </small>
+                              <div class="invalid-feedback"> Name on card is required. </div>
+                          </div>
+                          <div class="col-md-6">
+                              <label for="cc-number" class="form-label"> Credit Card Number </label>
+                              <input id="cc-number" type="text" class="form-control">
+                              <div class="invalid-feedback"> Credit Card number is required.</div>
+                          </div>
+                          <div class="col-md-3">
+                              <label for="cc-expire" class="form-label"> Expiration </label>
+                              <input id="cc-expire" type="text" class="form-control">
+                              <div class="invalid-feedback"> Expiration is required.</div>
+                          </div>
+                          <div class="col-md-3">
+                              <label for="cc-cvv" class="form-label"> CVV </label>
+                              <input id="cc-cvv" type="text" class="form-control">
+                              <div class="invalid-feedback"> CVV is required.</div>
+                          </div>
+                      </div>
+                      <button class="btn btn-primary btn-lg btn-block" style="width: fit-content; margin-bottom: 20px;"> Continue to checkout. </button>
+          </div>
+  
+      </form>
+  </div>
 <footer class="footer">
 
     <section class="quick-links">
 
-        <a href="home.html" class="logo"> <i class="fas fa-store"></i> shopie </a>
+        <a href="home.html" class="logo"> <i class="fas fa-store"></i> iShopTech </a>
     
         <div class="navigation">
             <nav>
@@ -125,11 +217,9 @@
                         <li> Contact</li>
                     </a>
                     <a href="login.html" class="navlink">
-                        <li> Login</li>
+                        <li> Login </li>
                     </a>
-                    <a href="register.html" class="navlink">
-                        <li> Register </li>
-                    </a>
+                   
                     <a href="cart.html" class="navlink">
                         <li> Cart </li>
                     </a>
@@ -146,13 +236,24 @@
     
     </section>
     
+    
     <section class="credit">
     
-        <p> created by <span>Group 31
-        </span> | all rights reserved! </p>
-    
-        <img src="images/card_img.png" alt="">
+        <p> created by <span>Group 31 </span> | all rights reserved! </p>
     
     </section>
 
+      
+      <script src="cart.js"></script>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/popper.is@1.16.0/dist/umd/popper.minis" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWld1vI9I0Yy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossoriain="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alphal/is/bootstrap.min.js"integrity="sha384-oes162h0Lfzrys4LxRF630JCXdXDipiYWBnVT19Y9/TRIw5x1KIEHpNyvvDShgf/"crossorigin= "anonymous"> </script>
+
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script src="js_jquery/jquery.js"></script>
+
+
+</body>
+</html>
