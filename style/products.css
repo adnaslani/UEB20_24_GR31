@@ -700,5 +700,20 @@ footer a:hover {
     margin-left: auto;
     margin-right: 20px;
 }
-  
+
+
+.embed-responsive p {
+  font-size: 2rem;
+  margin-top: 1rem; 
+  color: #fff;
+}
+
+.audioo {
+  height: 50px;
+  width: 30%;
+	display: flex;
+	justify-content: center;
+  margin-bottom: 30px;
+  margin-right: 220px;
+}
 
