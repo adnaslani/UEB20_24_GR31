@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+          box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+html {
+  overflow-x: hidden;
+  font-size: 62.5%;
+}
+
+html {
+  scrollbar-width: 1rem;
+}
+
+html {
+  scrollbar-color: #eee #256981;
+}
+
+
+body {
+  background: #eee;
+}
+
+section {
+  padding:3rem 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 3.5rem;
+  color: #efebeb;
+}
+
+.heading span {
+  color: #53a8b6;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  border-radius: .5rem;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: #fff;
+  cursor: pointer;
+  background: #53a8b6;
+}
+
+.btn:hover {
+  background: #333;
+}
+
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #33a4b5;
+}
+
+.header .flex{
+  position: relative;
+  padding: 1rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+          align-items: center;
+          justify-content: space-between;
+}
+
+.header .flex .logo {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.header .flex .logo i {
+  color: gold;
+}
+
+.header .flex a {
+  text-transform: none;
+}
+
+.header .flex .search-form {
+  border-radius: 5rem;
+  height: 5rem;
+  width: 50rem;
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+          align-items: center;
+  background: #fff;
+}
+
+.header .flex .search-form input {
+  width: 100%;
+  padding-right: 1rem;
+  font-size: 1.7rem;
+  text-transform: none;
+  color: #666;
+}
+
+.header .flex .search-form label {
+  font-size: 2rem;
+  color: #666;
+  cursor: pointer;
+}
+
+.header .flex .search-form label:hover {
+  color: #0984e3;
+}
+
+.header .flex .icons a,
+.header .flex .icons div {
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.header .flex .icons a:hover,
+.header .flex .icons div:hover {
+  color: gold;
+}
+
+#search-btn {
+  display: none;
+}
+.fas {
+  text-decoration: none;
+}
+.nav_link {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav_list_wrapper {
+margin-top: 80px;
+}
+
+.nav_list_wrapper li {
+  padding: 20px;
+}
+.side-bar {
+  position: fixed;
+  top: 0;
+  left: -110%;
+  height: 100%;
+  width: 30rem;
+  background: #fff;
+  z-index: 10000;
+}
+
+.side-bar.active {
+  left: 0;
+          box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
+}
+
+.side-bar #close-side-bar {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  color: #666;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.side-bar #close-side-bar:hover {
+          transform: rotate(90deg);
+  color: #333;
+}
+#toggle-sidebar {
+  background: #33a4b5; 
+  color: #fff;
+}
+
+#toggle-sidebar:hover {
+  background: #33a4b5;
+}
+
+.side-bar .navbar {
+  padding-top: 1rem;
+}
+
+.side-bar .navbar a {
+  display: block;
+  padding: 1rem 2rem;
+  font-size: 1.7rem;
+  color: #666;
+}
+
+.side-bar .navbar a:hover {
+  color: #256981;
+}
+
+.side-bar .navbar a:hover i {
+  padding-right: 2rem;
+}
+
+.side-bar .navbar a i {
+  padding-right: .5rem;
+}
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-nav a {
+  text-align: center;
+  padding: 10px; /* Adjust the padding as needed */
+}
+
+.navbar-nav a i {
+  display: block;
+  margin-bottom: 5px; /* Adjust the margin as needed */
+}
+
+.home-container{
+  background: #fff;
+}
+
+
+
+.footer {
+  position: -webkit-sticky;
+  position: sticky;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border box;
+}
+
+.quick-links {
+  display:inline-flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+  display:inline-block;
+  align-items: center;
+  padding-right: 130px;
+}
+
+.navigation {
+  margin: 0 auto;
+  font-size: 2.5rem;
+}
+
+.navigation nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.navlink {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
+  font-size: 2rem;
+}
+
+.share {
+  display: inline-block;
+  align-items: center;
+  font-size: 2rem;
+  padding-left: 120px;
+}
+
+.share a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0px 10px 5px 10px;
+ 
+}
+
+footer a:hover {
+  color: #256981;
+}
+
+.credit {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.credit p {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.credit span {
+  font-weight: bold;
+}
+
+.credit img {
+  max-width: 100px;
+}
+#myVideo {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.container {
+    font-size: 2rem;
+}
+
+/* Increase the width of the form input and select boxes */
+.form-control {
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+/* Increase the height of the form input boxes */
+.form-control,
+.form-check-input {
+    height: 40px; /* You can adjust the height as needed */
+}
+
+/* Increase the height of the form select boxes */
+.form-select {
+    height: 40px; /* You can adjust the height as needed */
+}
+
+/* Adjust the font size for better readability */
+.form-label,
+.form-check-label {
+    font-size: 16px; /* You can adjust the font size as needed */
+}
+
+/* Increase the height of the checkboxes and radio buttons */
+.form-check-input[type="checkbox"],
+.form-check-input[type="radio"] {
+    width: 20px;
+    height: 20px;
+}
+
+/* Style the "Continue to checkout" button */
+.btn-primary {
+    font-size: 2rem; /* You can adjust the font size as needed */
+    padding: 10px 20px; /* You can adjust the padding as needed */
+}
+
+.container h2 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.container h4 {
+    font-size: 2.5rem;
+}
