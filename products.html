@@ -8,9 +8,9 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="style/products.css">
 
 </head>
 <body>
@@ -32,7 +32,6 @@
                 <button id="toggle-sidebar"><div id="menu-btn" class="fas fa-bars"></div></button>
                 <div id="search-btn" class="fas fa-search"></div>
                 <a href="login.html" class="fas fa-user"></a>
-                <a href="favorites.html" class="fas fa-heart"></a>
                 <a href="cart.html" class="fas fa-shopping-cart"></a>
             </div>
     
@@ -41,21 +40,27 @@
     </header>
     
     <div class="side-bar">
-    
         <button id="toggle-sidebar"><div id="close-side-bar" class="fas fa-times"></div></button>
     
-        <nav class="navbar">
-            <a href="index.html"> <i class="fas fa-angle-right"></i> home </a>
-            <a href="about.html"> <i class="fas fa-angle-right"></i> about </a>
-            <a href="products.html"> <i class="fas fa-angle-right"></i> products </a>
-            <a href="contact.html"> <i class="fas fa-angle-right"></i> contact </a>
-            <a href="login.html"> <i class="fas fa-angle-right"></i> login </a>
-            <a href="register.html"> <i class="fas fa-angle-right"></i> register </a>
-            <a href="cart.html"> <i class="fas fa-angle-right"></i> cart </a>
-        </nav>
+        <div class="nav" id="nav1" >
+            <div class="container">
+                <nav>
+                  <!-- <div class="navicon"> -->
+                    <div class="nav_list_wrapper">
     
+                        <li><i class="fas fa-angle-right"></i> <a class="nav_link" href="index.html">Home</a></li>
+                        <li><i class="fas fa-angle-right"></i> <a class="nav_link" href="about.html">About</a></li>
+                        <li><i class="fas fa-angle-right"></i> <a class="nav_link" href="products.html">Products</a></li>
+                        <li><i class="fas fa-angle-right"></i> <a class="nav_link" href="contact.html">Contact</a></li>
+                        <li><i class="fas fa-angle-right"></i> <a class="nav_link" href="login.html">Login and Register</a></li>
+                        <li><i class="fas fa-angle-right"></i> <a class="nav_link" href="cart.html">Cart</a></li>
+                    </div>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
     </div>
-
 <video autoplay muted loop id="myVideo">
     <source src="images/about-video-1.mp4" type="video/mp4">
   </video>
@@ -120,7 +125,6 @@
                 <img src="images/product-1-hover.jpg" class="hover-img" alt="">
                 <div class="icons">
                     <a href="cart.html" class="fas fa-shopping-cart"></a>
-                    <a href="favorites.html" class="fas fa-heart"></a>
                 </div>
             </div>
             <div class="content">
@@ -142,7 +146,6 @@
                 <img src="images/product-2-hover.jpg" class="hover-img" alt="">
                 <div class="icons">
                     <a href="cart.html" class="fas fa-shopping-cart"></a>
-                    <a href="favorites.html" class="fas fa-heart"></a>
                 </div>
             </div>
             <div class="content">
@@ -164,7 +167,6 @@
                 <img src="images/product-3-hover.jpg" class="hover-img" alt="">
                 <div class="icons">
                     <a href="cart.html" class="fas fa-shopping-cart"></a>
-                    <a href="favorites.html" class="fas fa-heart"></a>
                 </div>
             </div>
             <div class="content">
@@ -186,7 +188,6 @@
                 <img src="images/product-4-hover.jpg" class="hover-img" alt="">
                 <div class="icons">
                     <a href="cart.html" class="fas fa-shopping-cart"></a>
-                    <a href="favorites.html" class="fas fa-heart"></a>
                 </div>
             </div>
             <div class="content">
@@ -208,7 +209,6 @@
                 <img src="images/product-5-hover.jpg" class="hover-img" alt="">
                 <div class="icons">
                     <a href="cart.html" class="fas fa-shopping-cart"></a>
-                    <a href="favorites.html" class="fas fa-heart"></a>
                 </div>
             </div>
             <div class="content">
@@ -230,7 +230,6 @@
                 <img src="images/product-6-hover.jpg" class="hover-img" alt="">
                 <div class="icons">
                     <a href="cart.html" class="fas fa-shopping-cart"></a>
-                    <a href="favorites.html" class="fas fa-heart"></a>
                 </div>
             </div>
             <div class="content">
@@ -252,7 +251,6 @@
                 <img src="images/product-7-hover.jpg" class="hover-img" alt="">
                 <div class="icons">
                     <a href="cart.html" class="fas fa-shopping-cart"></a>
-                    <a href="favorites.html" class="fas fa-heart"></a>
                 </div>
             </div>
             <div class="content">
@@ -274,7 +272,6 @@
                 <img src="images/product-8-hover.jpg" class="hover-img" alt="">
                 <div class="icons">
                     <a href="cart.html" class="fas fa-shopping-cart"></a>
-                    <a href="favorites.html" class="fas fa-heart"></a>
                 </div>
             </div>
             <div class="content">
@@ -296,7 +293,6 @@
                 <img src="images/product-9-hover.jpg" class="hover-img" alt="">
                 <div class="icons">
                     <a href="cart.html" class="fas fa-shopping-cart"></a>
-                    <a href="favorites.html" class="fas fa-heart"></a>
                 </div>
             </div>
             <div class="content">
@@ -368,11 +364,9 @@
                         <li> Contact</li>
                     </a>
                     <a href="login.html" class="navlink">
-                        <li> Login</li>
+                        <li> Login </li>
                     </a>
-                    <a href="register.html" class="navlink">
-                        <li> Register </li>
-                    </a>
+
                     <a href="cart.html" class="navlink">
                         <li> Cart </li>
                     </a>
@@ -398,8 +392,12 @@
     </section>
 
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/popper.is@1.16.0/dist/umd/popper.minis" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWld1vI9I0Yy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossoriain="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alphal/is/bootstrap.min.js"integrity="sha384-oes162h0Lfzrys4LxRF630JCXdXDipiYWBnVT19Y9/TRIw5x1KIEHpNyvvDShgf/"crossorigin= "anonymous"> </script>
 
-<script src="products.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script src="js_jquery/jquery.js"></script>
 
 </body>
 </html>
