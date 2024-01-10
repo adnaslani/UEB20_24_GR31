@@ -305,6 +305,7 @@ margin-top: 40px;
   }
   
   .footer {
+    display: flex;
     position: -webkit-sticky;
     position: sticky;
     flex-direction: column;
