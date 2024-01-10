@@ -15,4 +15,5 @@ const accordions = document.querySelectorAll('.faq .accordion-container .accordi
    });
  });
 
+
  
