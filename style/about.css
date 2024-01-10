@@ -277,28 +277,22 @@ section {
     line-height: 2;
   }
 
-  .team {
-    display: flex;
-    flex-wrap:wrap;
-    /* justify-content: space-around; */
-    align-items: center;
-    flex-direction: column;
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.team-slider {
+.team-slider{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .team-slide {
   text-align: center;
-  margin: 0 10px; /* Adjust the margin as needed for spacing between team members */
-}
-
-
-.team .slide {
-  width: 30rem; 
   margin: 10px;
   padding: 1.2rem;
   text-align: center;
@@ -306,50 +300,57 @@ section {
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  flex-direction: row;
+  flex: 0 0 calc(30% - 20px); /* Initially, show three items in a row */
 }
 
-
+@media (max-width: 1024px) {
+  .team-slide {
+      flex: 0 0 calc(50% - 20px); /* Show two items in a row on smaller screens */
+  }
+}
 
 @media (max-width: 768px) {
-    .team .slide {
-        flex: 0 0 calc(50% - 2rem); 
-        
-    }
+  .team-slide {
+      flex: 0 0 calc(50% - 20px); /* Show two items in a row on even smaller screens */
+  }
 }
 
-.team .slide img {
-    height: 10rem;
-    width: 10rem;
-    border-radius: 50%;
-    margin-bottom: 1rem;
+@media (max-width: 480px) {
+  .team-slide {
+      flex: 0 0 calc(100% - 20px); /* Show one item in a row on the smallest screens */
+  }
 }
 
-.team .slide h3 {
-    font-size: 2rem;
-    color: #333;
+.team-slide img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
 }
 
-.team .slide span {
-    color: #256981;
-    font-size: 1.7rem;
-    
+.team-slide h3 {
+  font-size: 2rem;
+  color: #333;
 }
 
-.team .slide p {
-    font-size: 1.2rem;
-    line-height: 2;
-    color: #666;
-    padding-top: 1rem;
-    text-align: left;
-    text-transform: none;
-
+.team-slide span {
+  color: #256981;
+  font-size: 1.7rem;
 }
 
-.team .slide a {
+.team-slide p {
+  font-size: 1.2rem;
+  line-height: 2;
+  color: #666;
+  padding-top: 1rem;
+  text-align: left;
   text-transform: none;
-
 }
+
+.team-slide a {
+  text-transform: none;
+}
+
 
  
   
