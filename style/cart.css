@@ -239,6 +239,7 @@ margin-top: 80px;
 
 
 .footer {
+  display: flex;
   position: -webkit-sticky;
   position: sticky;
   flex-direction: column;
@@ -338,40 +339,34 @@ footer a:hover {
     font-size: 2rem;
 }
 
-/* Increase the width of the form input and select boxes */
 .form-control {
     width: 100%;
     font-size: 1.5rem;
 }
 
-/* Increase the height of the form input boxes */
 .form-control,
 .form-check-input {
-    height: 40px; /* You can adjust the height as needed */
+    height: 40px; 
 }
 
-/* Increase the height of the form select boxes */
 .form-select {
-    height: 40px; /* You can adjust the height as needed */
+    height: 40px; 
 }
 
-/* Adjust the font size for better readability */
 .form-label,
 .form-check-label {
-    font-size: 16px; /* You can adjust the font size as needed */
+    font-size: 16px; 
 }
 
-/* Increase the height of the checkboxes and radio buttons */
 .form-check-input[type="checkbox"],
 .form-check-input[type="radio"] {
     width: 20px;
     height: 20px;
 }
 
-/* Style the "Continue to checkout" button */
 .btn-primary {
-    font-size: 2rem; /* You can adjust the font size as needed */
-    padding: 10px 20px; /* You can adjust the padding as needed */
+    font-size: 2rem; 
+    padding: 10px 20px; 
 }
 
 .container h2 {
