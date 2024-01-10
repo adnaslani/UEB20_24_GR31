@@ -8,60 +8,59 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="style/products.css">
 
 </head>
 <body>
     
 
 
-<header class="header">
+    <header class="header">
 
-    <section class="flex">
-
-        <a href="home.html" class="logo"> <i class="fas fa-store"></i> iShopTech </a>
-
-        <form action="" class="search-form">
-            <input type="search" id="search-box" placeholder="search here...">
-            <label for="search-box" class="fas fa-search"></label>
-        </form>
-
-        <div class="icons">
-            <div id="menu-btn" class="fas fa-bars"></div>
-            <div id="search-btn" class="fas fa-search"></div>
-            <a href="login.html" class="fas fa-user"></a>
-            <a href="favorites.html" class="fas fa-heart"></a>
-            <a href="cart.html" class="fas fa-shopping-cart"></a>
-        </div>
-
-    </section>
-
-</header>
-
-
-<div class="side-bar">
-
-    <div id="close-side-bar" class="fas fa-times"></div>
-
-    <div class="user">
-        <img src="images/user-img.png" alt="">
-        <h3>name_surname</h3>
-        <a href="#">log out</a>
+        <section class="flex">
+    
+            <a href="index.html" class="logo"> <i class="fas fa-store"></i> iShopTech </a>
+    
+            <form action="" class="search-form">
+                <input type="search" id="search-box" placeholder="search here...">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+    
+            <div class="icons">
+                <button id="toggle-sidebar"><div id="menu-btn" class="fas fa-bars"></div></button>
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="login.html" class="fas fa-user"></a>
+                <a href="cart.html" class="fas fa-shopping-cart"></a>
+            </div>
+    
+        </section>
+    
+    </header>
+    
+    <div class="side-bar">
+        <button id="toggle-sidebar"><div id="close-side-bar" class="fas fa-times"></div></button>
+    
+        <div class="nav" id="nav1" >
+            <div class="container">
+                <nav>
+                  <!-- <div class="navicon"> -->
+                    <div class="nav_list_wrapper">
+    
+                        <li><i class="fas fa-angle-right"></i> <a class="nav_link" href="index.html">Home</a></li>
+                        <li><i class="fas fa-angle-right"></i> <a class="nav_link" href="about.html">About</a></li>
+                        <li><i class="fas fa-angle-right"></i> <a class="nav_link" href="products.html">Products</a></li>
+                        <li><i class="fas fa-angle-right"></i> <a class="nav_link" href="contact.html">Contact</a></li>
+                        <li><i class="fas fa-angle-right"></i> <a class="nav_link" href="login.html">Login and Register</a></li>
+                        <li><i class="fas fa-angle-right"></i> <a class="nav_link" href="cart.html">Cart</a></li>
+                    </div>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
     </div>
-
-    <nav class="navbar">
-        <a href="home.html"> <i class="fas fa-angle-right"></i> home </a>
-        <a href="about.html"> <i class="fas fa-angle-right"></i> about </a>
-        <a href="products.html"> <i class="fas fa-angle-right"></i> products </a>
-        <a href="contact.html"> <i class="fas fa-angle-right"></i> contact </a>
-        <a href="login.html"> <i class="fas fa-angle-right"></i> login </a>
-        <a href="register.html"> <i class="fas fa-angle-right"></i> register </a>
-        <a href="cart.html"> <i class="fas fa-angle-right"></i> cart </a>
-    </nav>
-
-</div>
 
 
 <video autoplay muted loop id="myVideo">
@@ -78,8 +77,7 @@
         <p><b>Features:</b> 8K video recording, Dual Pixel CMOS AF II, In-body image stabilization.</p>
         <p class="price">Price: $3,899.00</p>
         <div class="iconss">
-        <a href="#" class="fas fa-shopping-cart"></a>
-        <a href="#" class="fas fa-heart"></a>
+        <a href="cart.html" class="fas fa-shopping-cart"></a>
         </div>
     </div>
     <img class="tv-image" src="images/camera_Canon EOS R5.jpeg">
@@ -92,8 +90,7 @@
         <p><b>Features:</b> 4K video, 693-point phase-detection AF, 5-axis in-body stabilization.</p>
         <p class="price">Price: $1,999.99</p>
         <div class="iconss">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
+            <a href="cart.html" class="fas fa-shopping-cart"></a>
             </div>    
     </div>
     <img class="tv-image" src="images/camera_Sony A7 III.jpg">
@@ -108,8 +105,7 @@
         <p><b>Features:</b> 273-point phase-detection AF, 4K UHD video, 5-axis VR image stabilization.</p>
         <p class="price">Price: $1,796.95</p>
         <div class="iconss">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
+            <a href="cart.html" class="fas fa-shopping-cart"></a>
             </div>    
 
     </div>
@@ -124,8 +120,7 @@
         <p><b>Features:</b> In-body image stabilization, 4K video, 425-point phase-detection AF.</p>
         <p class="price">Price: $1,699.95</p>
         <div class="iconss">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
+            <a href="cart.html" class="fas fa-shopping-cart"></a>
             </div>    
 
     </div><img class="tv-image" src="images/camera_Fujifilm X-T4.jpg">
@@ -139,8 +134,7 @@
         <p><b>Features:</b> 4K video with 6K Photo, Dual Image Stabilization, 225-point AF.</p>
         <p class="price">Price: $1,297.99</p>
         <div class="iconss">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
+            <a href="cart.html" class="fas fa-shopping-cart"></a>
             </div>    
 
     </div><img class="tv-image" src="images/camera_Panasonic Lumix GH5.jpg">
@@ -154,8 +148,7 @@
         <p><b>Features:</b> In-body 5-axis image stabilization, 4K video, 121-point contrast-detect AF.</p>
         <p class="price">Price: $699.00</p>
         <div class="iconss">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
+            <a href="cart.html" class="fas fa-shopping-cart"></a>
             </div>    
 
     </div><img class="tv-image" src="images/camera_Olympus OM-D E-M10 Mark IV.jpg">
@@ -188,11 +181,9 @@
                         <li> Contact</li>
                     </a>
                     <a href="login.html" class="navlink">
-                        <li> Login</li>
+                        <li> Login </li>
                     </a>
-                    <a href="register.html" class="navlink">
-                        <li> Register </li>
-                    </a>
+
                     <a href="cart.html" class="navlink">
                         <li> Cart </li>
                     </a>
@@ -219,3 +210,10 @@
     </section>
 
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/popper.is@1.16.0/dist/umd/popper.minis" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWld1vI9I0Yy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossoriain="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alphal/is/bootstrap.min.js"integrity="sha384-oes162h0Lfzrys4LxRF630JCXdXDipiYWBnVT19Y9/TRIw5x1KIEHpNyvvDShgf/"crossorigin= "anonymous"> </script>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js_jquery/jquery.js"></script>
+</body>
+</html>
