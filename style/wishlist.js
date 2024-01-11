@@ -1,22 +1,50 @@
-<script>
-  $(document).ready(function() {
-    // Handle click on the heart icon
-    $('.fas.fa-heart').on('click', function() {
-      // Find the parent box of the clicked heart icon
-      var productBox = $(this).closest('.box');
+// Sample wishlist array to store product IDs
+let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
 
-      // Get product information from the box
-      var productId = productBox.data('product-id');
-      var productName = productBox.find('.content h3').text();
+// Function to toggle wishlist status
+function toggleWishlist(productId) {
+    const index = wishlist.indexOf(productId);
 
-      // Check if the product is already in the favorites
-      if ($('#wishlist:contains("' + productName + '")').length === 0) {
-        // If not, add it to the favorites
-        $('#wishlist').append('<div data-product-id="' + productId + '">' + productName + '</div>');
-      } else {
-        // If it's already in the favorites, you can provide some feedback or handle it accordingly
-        alert('Product already in favorites!');
-      }
+    if (index === -1) {
+        // Product is not in the wishlist, add it
+        wishlist.push(productId);
+    } else {
+        // Product is already in the wishlist, remove it
+        wishlist.splice(index, 1);
+    }
+
+    // Save the updated wishlist to localStorage
+    localStorage.setItem('wishlist', JSON.stringify(wishlist));
+
+    updateWishlistUI();
+}
+
+// Function to update the UI based on wishlist status
+function updateWishlistUI() {
+    const wishlistIcons = document.querySelectorAll('.fas.fa-heart');
+
+    wishlistIcons.forEach((icon, index) => {
+        const productId = index + 1; // Assuming product IDs start from 1
+
+        if (wishlist.includes(productId)) {
+            icon.classList.add('active');
+        } else {
+            icon.classList.remove('active');
+        }
     });
-  });
-</script>
+}
+
+// Attach the click event listener to wishlist icons
+document.addEventListener('DOMContentLoaded', function () {
+    updateWishlistUI(); // Initialize the UI on page load
+
+    const wishlistIcons = document.querySelectorAll('.fas.fa-heart');
+
+    wishlistIcons.forEach((icon, index) => {
+        const productId = index + 1;
+
+        icon.addEventListener('click', function () {
+            toggleWishlist(productId);
+        });
+    });
+});
