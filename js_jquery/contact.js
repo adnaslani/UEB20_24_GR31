@@ -8,6 +8,9 @@ if (currentHour >= 5 && currentHour < 12) {
 } else {
   greeting = greeting.concat('evening!');
 }
+console.log(greeting);
+document.getElementById('greeting-display').textContent = greeting;
+
 
 function allowDrop(event) {
   event.preventDefault();
