@@ -448,3 +448,12 @@ margin-top: 60px;
     color: #666;
   }
   
+  #greeting-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+    width: 40%;
+    font-size: 3rem;
+}
