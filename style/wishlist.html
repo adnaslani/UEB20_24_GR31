@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... (existing head content) ... -->
+
+    <!-- Additional styles for wishlist -->
+    <link rel="stylesheet" href="style/wishlist.css">
+
+</head>
+<body>
+
+    <!-- ... (existing body content) ... -->
+
+    <!-- Wishlist functionality -->
+    <div class="wishlist">
+        <h3>Your Wishlist</h3>
+        <ul id="wishlist-items">
+            <!-- Wishlist items will be dynamically added here -->
+        </ul>
+    </div>
+
+    <script>
+        // Dummy data for demonstration purposes
+        const products = [
+            { id: 1, name: 'HD Television', price: 249.99 },
+            { id: 2, name: 'Lenovo Laptop', price: 249.99 },
+            // ... Add more products as needed
+        ];
+
+        // Function to add a product to the wishlist
+        function addToWishlist(productId) {
+            // Check if the product is not already in the wishlist
+            const isInWishlist = wishlistItems.some(item => item.id === productId);
+
+            if (!isInWishlist) {
+                const product = products.find(item => item.id === productId);
+                wishlistItems.push(product);
+                updateWishlistUI();
+            }
+        }
+
+        // Function to remove a product from the wishlist
+        function removeFromWishlist(productId) {
+            wishlistItems = wishlistItems.filter(item => item.id !== productId);
+            updateWishlistUI();
+        }
+
+        // Function to update the wishlist UI
+        function updateWishlistUI() {
+            const wishlistContainer = document.getElementById('wishlist-items');
+            wishlistContainer.innerHTML = '';
+
+            wishlistItems.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+                wishlistContainer.appendChild(li);
+            });
+        }
+
+        // Dummy data for demonstration purposes
+        let wishlistItems = [];
+
+        // Example: Adding event listeners to wishlist icons
+        document.querySelectorAll('.wishlist-icon').forEach(icon => {
+            icon.addEventListener('click', () => {
+                const productId = parseInt(icon.dataset.productId, 10);
+                addToWishlist(productId);
+            });
+        });
+    </script>
+
+</body>
+</html>
