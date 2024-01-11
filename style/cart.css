@@ -150,11 +150,11 @@ section {
 }
 
 .nav_list_wrapper {
-margin-top: 80px;
+margin-top: 55px;
 }
 
 .nav_list_wrapper li {
-  padding: 20px;
+  padding: 15px;
 }
 .side-bar {
   position: fixed;

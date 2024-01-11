@@ -1,4 +1,3 @@
-<script src="js_jquery/jquery.js"></script>
 
 //SIDEBAR
 $(document).ready(function() {

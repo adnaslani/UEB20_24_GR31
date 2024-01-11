@@ -176,8 +176,24 @@ section {
   width: 30rem;
   background: #fff;
   z-index: 10000;
+
+}
+.nav_link {
+  text-decoration: none;
+  color: #333;
 }
 
+.nav_list_wrapper {
+margin-top: 70px;
+}
+
+.nav_list_wrapper li {
+  padding: 15px;
+  font-size: 2rem;
+}
+.fas {
+  text-decoration: none;
+}
 .side-bar.active {
   left: 0;
           box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
