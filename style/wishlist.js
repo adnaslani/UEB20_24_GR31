@@ -1,50 +1,44 @@
-// Sample wishlist array to store product IDs
-let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
 
-// Function to toggle wishlist status
-function toggleWishlist(productId) {
-    const index = wishlist.indexOf(productId);
 
-    if (index === -1) {
-        // Product is not in the wishlist, add it
-        wishlist.push(productId);
-    } else {
-        // Product is already in the wishlist, remove it
+document.addEventListener('DOMContentLoaded', function () {
+    // Sample wishlist array to store product IDs
+    let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+
+    // Function to remove an item from the wishlist
+    function removeFromWishlist(index) {
         wishlist.splice(index, 1);
+        updateWishlistUI();
+        saveWishlistToLocalStorage();
     }
 
-    // Save the updated wishlist to localStorage
-    localStorage.setItem('wishlist', JSON.stringify(wishlist));
+    // Function to update the UI based on wishlist status
+    function updateWishlistUI() {
+        const wishlistItems = document.getElementById('wishlist-items');
+        wishlistItems.innerHTML = '';
 
-    updateWishlistUI();
-}
+        wishlist.forEach((item, index) => {
+            const listItem = document.createElement('li');
+            listItem.classList.add('list-group-item');
+            listItem.textContent = `Product ${item + 1}`;
 
-// Function to update the UI based on wishlist status
-function updateWishlistUI() {
-    const wishlistIcons = document.querySelectorAll('.fas.fa-heart');
+            const removeButton = document.createElement('button');
+            removeButton.classList.add('btn', 'btn-danger', 'btn-sm', 'float-end');
+            removeButton.textContent = 'Remove';
 
-    wishlistIcons.forEach((icon, index) => {
-        const productId = index + 1; // Assuming product IDs start from 1
+            removeButton.addEventListener('click', function () {
+                removeFromWishlist(index);
+            });
 
-        if (wishlist.includes(productId)) {
-            icon.classList.add('active');
-        } else {
-            icon.classList.remove('active');
-        }
-    });
-}
-
-// Attach the click event listener to wishlist icons
-document.addEventListener('DOMContentLoaded', function () {
-    updateWishlistUI(); // Initialize the UI on page load
-
-    const wishlistIcons = document.querySelectorAll('.fas.fa-heart');
-
-    wishlistIcons.forEach((icon, index) => {
-        const productId = index + 1;
-
-        icon.addEventListener('click', function () {
-            toggleWishlist(productId);
+            listItem.appendChild(removeButton);
+            wishlistItems.appendChild(listItem);
         });
-    });
+    }
+
+    // Function to save the updated wishlist to localStorage
+    function saveWishlistToLocalStorage() {
+        localStorage.setItem('wishlist', JSON.stringify(wishlist));
+    }
+
+    // Initial update of the UI
+    updateWishlistUI();
 });
