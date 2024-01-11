@@ -98,7 +98,7 @@
 
 <section class="contact">
 
-    <form action="">
+    <form action="" draggable="true" ondragstart="dragStart(event)" ondragover="dragOver(event)" ondrop="drop(event)">
         <h3>get in touch</h3>
         <p>Welcome to our contact page! We value your feedback and inquiries. Whether you have questions about our services, want to collaborate, or simply want to say hello, we'd love to hear from you. Please fill out the form below and let us know how we can assist you. Your thoughts are important to us, and we'll get back to you as soon as possible. Thank you for reaching out!</p>
         <div class="inputBox">
@@ -109,7 +109,7 @@
             <input type="number" placeholder="your number">
             <input type="text" placeholder="subject">
         </div>
-        <textarea name="" placeholder="your message" id="" cols="30" rows="10"></textarea>
+        <textarea name="" placeholder="your message (you can drag and drop your file here.)" id="message" cols="30" rows="10" ondrop="drop(event)" ondragover="allowDrop(event)"></textarea>
         <input type="submit" value="send message" class="btn">
     </form>
 
