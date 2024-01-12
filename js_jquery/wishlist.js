@@ -53,6 +53,6 @@ document.addEventListener('DOMContentLoaded', function () {
             if (listItem) {
                 listItem.remove();
             }
-        });
-    });
+        });
+    });
 });
