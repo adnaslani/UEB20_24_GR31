@@ -1,4 +1,3 @@
-<script src="js_jquery/about.js"></script>
 
 const accordions = document.querySelectorAll('.faq .accordion-container .accordion');
       
